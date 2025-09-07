@@ -1,0 +1,161 @@
+{
+	"ficha": {
+		"rolagem": "Rolagem Adaptável",
+		"abas": {
+			"base": "Base",
+			"armas": "Armas",
+			"armaduras": "Armaduras",
+			"habilidades": "Habilidades",
+			"itens": "Itens",
+			"idiomas": "Idiomas",
+			"notas": "Notas"
+		},
+		"itensGerais": {
+			"nome": "Nome",
+			"resumo": "Resumo"
+		},
+		"selectOptions": {
+			"nivelPericia": {
+				"inabil": "Inábil",
+				"aprendiz": "Aprendiz",
+				"competente": "Competente",
+				"profissional": "Profissional",
+				"especialista": "Especialista",
+				"mestre": "Mestre",
+				"lenda": "Lenda"
+			},
+			"tamanhos": {
+				"minusculo": "Minúsculo",
+				"muitoPequeno": "Muito Pequeno",
+				"pequeno": "Pequeno",
+				"medio": "Médio",
+				"grande": "Grande",
+				"muitoGrande": "Muito Grande",
+				"imenso": "Imenso"
+			}
+		},
+		"categorias":{
+			"atributos": "Atributos",
+			"pericias": "Perícias",
+			"ataque": "Ataque",
+			"carga": "Carga",
+			"conhecimentos": "Conhecimentos e Técnicas",
+			"sociais": "Sociais e Esportivos",
+			"talentos": "Talentos e Sobrevivência",
+			"xp": "Pontos de Experiência",
+			"riquezas": "Riquezas"
+		},
+		"atributos": {
+			"extenso": {
+				"forca": "Força",
+				"agilidade": "Agilidade",
+				"astucia": "Astúcia",
+				"porte": "Porte",
+				"fofoca": "Fofoca"
+			},
+			"curto": {
+				"forca": "FOR",
+				"agilidade": "AGI",
+				"astucia": "AST",
+				"porte": "POR",
+				"fofoca": "FOF"
+			}
+		},
+		"pericias": {
+			"conhecimentos":{
+				"cura": "Cura",
+				"historia": "História",
+				"investigacao": "Investigação",
+				"ocultismo": "Ocultismo",
+				"religiao": "Religião"
+			},
+			"sociais":{
+				"etiqueta": "Etiqueta",
+				"manha": "Manha",
+				"performance": "Performance"
+			},
+			"talentos":{
+				"oficios": "Ofícios",
+				"percepcao": "Percepção",
+				"sobrevivencia": "Sobrevivência"
+			}
+		},
+		"ataque": {
+			"base": "Ataque",
+			"outros": "Outros",
+			"lutar": "Lutar",
+			"atirar": "Atirar"
+		},
+		"defesa": "Defesa",
+		"movimento": "Movimento",
+		"protecao": "Proteção",
+		"avaria": "Avaria",
+		"carga": {
+			"max": "Max",
+			"atual": "Atual",
+			"penalidade": "Penalidade"
+		},
+		"vida": {
+			"base": "Pontos de Vida",
+			"temp": "Temporários",
+			"ferimentos": "Ferimentos",
+			"atual": "Atuais"
+		},
+		"eter": "Éter",
+		"attrMagia": "Atributo de Conjuração",
+		"circuloMagia": "Círculo Místico",
+		"fe": "Religiosidade e Fé",
+		"especializacao": "Especialização",
+		"povo": "Ancestralidade/Povo",
+		"classe": "Classe/Ofício",
+		"tamanho": "Tamanho",
+		"nivel": "Nível",
+		"notas": "Notas",
+		"xp": {
+			"atual": "Atual",
+			"prox": "Próximo Nível"
+		},
+		"riquezas": {
+			"ouro": "Ouro",
+			"outros": "Outros",
+			"cruzeiro": "Cruzeiro",
+			"curinga": "Curinga",
+			"dobrao": "Dobrão",
+			"nanquim": "Nanquim",
+			"peso": "Peso",
+			"realeza": "Realeza"
+		}
+	},
+	"itens": {
+		"etiquetas": {
+			"descricao": "Descrição",
+			"propriedades": "Propriedades",
+			"resumo": "Resumo"
+		},
+		"item": {
+			"carga": "Carga",
+			"preco": "Preço"
+		},
+		"arma": {
+			"propriedades": {
+				"dano": "Dano",
+				"iniciativa": "Iniciativa",
+				"especial": "Especial",
+				"tipo": "Tipo",
+				"alcance": "Alcance"
+			},
+			"atributo": "Atributo"
+		},
+		"armadura": {
+			"propriedades": {
+				"avaria": "Avaria",
+				"protecao": "Proteção",
+				"penalidade": "Penalidade"
+			}
+		}
+	},
+	"fofoca": {
+		"sucesso": "Fofoca plantada!",
+		"falha": "Meteu essa!?"
+	}
+}

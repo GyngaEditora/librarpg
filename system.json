@@ -1,0 +1,25 @@
+{
+  "name": "librarpg",
+  "title": "Libra RPG",
+  "description": "Um RPG com muita brasilidade",
+  "version": "1.0.0",
+  "minimumCoreVersion": "0.6.6",
+  "compatibleCoreVersion": "0.8.8",
+  "templateVersion": 1,
+  "author": ["Pehdrah", "Carolbernardino"],
+  "esmodules": ["module/librarpg.js"],
+  "styles": ["css/librarpg.css"],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "pt-BR",
+      "name": "Brazilian Portuguese",
+      "path": "lang/ptbr.json"
+    }
+  ],
+  "gridDistance": 5,
+  "gridUnits": "ft",
+  "primaryTokenAttribute": null,
+  "secondaryTokenAttribute": null,
+  "license": "LICENSE.txt"
+}

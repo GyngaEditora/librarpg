@@ -1,0 +1,33 @@
+
+			<div>
+				<button class="item-control item-create" type='idioma'>
+					<i class="fas fa-plus"></i>
+				</button>
+				<div class="items-list">
+					<table>
+						<tr class="item">
+							<td class="item-img" />
+							<td class="item-name">{{localize "ficha.itensGerais.nome"}}</td>
+							<td class="item-resume">{{localize "ficha.itensGerais.resumo"}}</td>
+							<td class="item-controls" />
+						</tr>
+						{{#each items as |item id|}}
+							{{#if (eqs item.type "idioma")}}
+								<tr class="item" data-item-id="{{item._id}}" draggable="true">
+									<td class="item-img">
+										<img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
+									</td>
+									<td class="item-name">
+										<h4>{{item.name}}</h4>
+									</td>
+									<td class="item-resume">{{item.system.resumo}}</td>
+									<td class="item-controls">
+										<a class="item-control item-edit" data-item-id="{{item._id}}" title="Edit Item"><i class="fas fa-edit"></i></a>
+										<a class="item-control item-delete" data-item-id="{{item._id}}" title="Delete Item"><i class="fas fa-trash"></i></a>
+									</td>
+								</tr>
+							{{/if}}
+						{{/each}}
+					</table>
+				</div>
+			</div>

@@ -1,0 +1,156 @@
+		
+			<table class="standardTable">
+				<tr>
+					<td style="width:25%; vertical-align: text-top">
+						{{localize "ficha.categorias.atributos"}}
+						<table class="standardTable">
+							{{#each actor.system.atributos as |attr id|}}
+								<tr>
+									<td>
+										<span class="rollable attr-rollable" attr="atributos.{{id}}">{{localize (concatenate "ficha.atributos.curto." id)}}</span>
+									</td>
+									<td>
+										<input class="atributos-input" name="system.atributos.{{id}}.valor" type="number" value="{{attr.valor}}" />
+									</td>
+									<td>
+										<select name="system.atributos.{{id}}.grad" value="{{attr.grad}}">
+											{{selectOptions (attrGrads) selected=attr.grad}}
+										</select>
+									</td>
+								</tr>
+							{{/each}}
+							<tr>
+								<td>
+									<span class="rollable fofoca-rollable" attr="fofoca">{{localize "ficha.atributos.curto.fofoca"}}</span>
+								</td>
+								<td>
+									<input class="atributos-input" name="system.fofoca" type="number" value="{{actor.system.fofoca}}" />
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td style="width:50%; vertical-align: text-top">
+						<div>
+							{{localize "ficha.tamanho"}}
+						</div>
+						<div>
+							<select name="system.tamanho">
+								{{selectOptions (sizeChoices) selected=actor.system.tamanho}}
+							</select>
+						</div>
+						<table class="standardTable">
+							<tr>
+								<td style="width:33%">
+									<div>
+										<input type="text" name="system.eter" value="{{actor.system.eter}}" />
+									</div>
+									<div>
+										{{localize "ficha.eter"}}
+									</div>
+								</td>
+								<td style="width:33%">
+									<div>
+										<select name="system.attrMagia" value="{{actor.system.attrMagia}}">
+											{{selectOptions (magicAttrs) selected=actor.system.attrMagia}}
+										</select>
+									</div>
+									<div>
+										{{localize "ficha.attrMagia"}}
+									</div>
+								</td>
+								<td style="width:33%">
+									<div>
+										<select name="system.circuloMagico" value="{{actor.system.circuloMagico}}">
+											{{selectOptions (magicCircles) selected=actor.system.circuloMagico}}
+										</select>
+									</div>
+									<div>
+										{{localize "ficha.circuloMagia"}}
+									</div>
+								</td>
+							</tr>
+						</table>
+						<table class="standardTable">
+							<tr>
+								<td style="width:50%">
+									<div>
+										<input type="text" name="system.especializacao" value="{{actor.system.especializacao}}" />
+									</div>
+									<div>
+										{{localize "ficha.especializacao"}}
+									</div>
+								</td>
+								<td style="width:50%">
+									<div>
+										<input type="text" name="system.fe" value="{{actor.system.fe}}" />
+									</div>
+									<div>
+										{{localize "ficha.fe"}}
+									</div>
+								</td>
+							</tr>
+						</table>
+						{{localize "ficha.categorias.xp"}}
+						<table class="standardTable">
+							<tr>
+								<td style="width:48%">
+									<div>
+										<input type="text" name="system.xp.atual" value="{{actor.system.xp.atual}}" />
+									</div>
+									<div>
+										{{localize "ficha.xp.atual"}}
+									</div>
+								</td>
+								<td>/</td>
+								<td style="width:48%">
+									<div>
+										<input type="text" name="system.xp.prox" value="{{actor.system.xp.prox}}" />
+									</div>
+									<div>
+										{{localize "ficha.xp.prox"}}
+									</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td style="width:25%">
+						{{localize "ficha.categorias.pericias"}}
+						<table class="standardTable">
+							{{#each actor.system.pericias as |cat id|}}
+								<tr>
+									<td>
+										{{localize (concatenate "ficha.categorias." id)}}
+										{{#if (eqs "sociais" id)}}
+											({{localize "ficha.atributos.curto.porte"}})
+										{{else}}
+											({{localize "ficha.atributos.curto.astucia"}})
+										{{/if}}
+										<table>
+											{{#each cat as |skill sid|}}
+												<tr>
+													<td>
+														{{#if (eqs "sociais" id)}}
+															<span class="rollable skill-rollable" attr="atributos.porte" pericia="pericias.{{id}}.{{sid}}">
+																{{localize (concatenate (concatenate (concatenate "ficha.pericias." id) ".") sid)}}
+															</span>
+														{{else}}
+															<span class="rollable skill-rollable" attr="atributos.astucia" pericia="pericias.{{id}}.{{sid}}">
+																{{localize (concatenate (concatenate (concatenate "ficha.pericias." id) ".") sid)}}
+															</span>
+														{{/if}}
+													</td>
+													<td>
+														<select name="system.pericias.{{id}}.{{sid}}" value="{{skill}}">
+															{{selectOptions (skillChoices) selected=skill}}
+														</select>
+													</td>
+												</tr>
+											{{/each}}
+										</table>
+									</td>
+								</tr>
+							{{/each}}
+						</table>
+					</td>
+				</tr>
+			</table>

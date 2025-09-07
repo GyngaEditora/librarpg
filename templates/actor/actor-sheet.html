@@ -1,0 +1,82 @@
+<form class="{{cssClass}}" autocomplete="off">
+
+    {{!-- Sheet Header --}}
+    <header class="sheet-header">
+        <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
+        <div class="header-fields">
+			<table>
+				<tr>
+					<td><input name="name" type="text" value="{{actor.name}}" placeholder="Name" /></td>
+				</tr>
+				<tr>
+					<td>Nome do Personagem</td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td><input name="system.povo" type="text" value="{{actor.system.povo}}" /></td>
+					<td><input name="system.classe" type="text" value="{{actor.system.classe}}" /></td>
+					<td><input name="system.nivel" type="text" value="{{actor.system.nivel}}" /></td>
+				</tr>
+				<tr>
+					<td>{{localize "ficha.povo"}}</td>
+					<td>{{localize "ficha.classe"}}</td>
+					<td>{{localize "ficha.nivel"}}</td>
+				</tr>
+			</table>
+        </div>
+    </header>
+	
+	<div>
+		<button class="simple-roll">{{localize "ficha.rolagem"}}</button>
+	</div>
+	
+	<div>
+		{{> "systems/librarpg/templates/actor/sheet-attack.html"}}
+	</div>
+
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="base">{{localize "ficha.abas.base"}}</a>
+        <a class="item" data-tab="armas">{{localize "ficha.abas.armas"}}</a>
+        <a class="item" data-tab="armaduras">{{localize "ficha.abas.armaduras"}}</a>
+        <a class="item" data-tab="habilidades">{{localize "ficha.abas.habilidades"}}</a>
+        <a class="item" data-tab="itens">{{localize "ficha.abas.itens"}}</a>
+        <a class="item" data-tab="idiomas">{{localize "ficha.abas.idiomas"}}</a>
+        <a class="item" data-tab="notas">{{localize "ficha.abas.notas"}}</a>
+    </nav>
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+        <div class="tab notes" data-group="primary" data-tab="base">
+			{{> "systems/librarpg/templates/actor/sheet-base.html"}}
+		</div>
+		
+        <div class="tab notes" data-group="primary" data-tab="armas">
+			{{> "systems/librarpg/templates/actor/sheet-armas.html"}}
+		</div>
+		
+        <div class="tab notes" data-group="primary" data-tab="armaduras">
+			{{> "systems/librarpg/templates/actor/sheet-armaduras.html"}}
+		</div>
+		
+        <div class="tab notes" data-group="primary" data-tab="habilidades">
+			{{> "systems/librarpg/templates/actor/sheet-habilidades.html"}}
+		</div>
+		
+        <div class="tab notes" data-group="primary" data-tab="itens">
+			{{> "systems/librarpg/templates/actor/sheet-itens.html"}}
+		</div>
+		
+        <div class="tab diary" data-group="primary" data-tab="idiomas">
+			{{> "systems/librarpg/templates/actor/sheet-idiomas.html"}}
+		</div>
+		
+        <div class="tab diary" data-group="primary" data-tab="notas">
+			<div class="mce-div">
+				{{editor notas target="system.notas" button=true editable=editable}}
+			</div>
+		</div>
+    </section>
+</form>
+

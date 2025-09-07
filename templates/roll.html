@@ -1,0 +1,18 @@
+<div class="librarpg chat-item">
+    <div class="border">
+		{{#if flavor}}
+			<h3>{{flavor}}</h3>
+        {{/if}}
+        {{#if fofoca}}
+			<h4>{{fofoca}}</h4>
+        {{/if}}
+        {{#if sucessos}}
+			<h4>Sucessos: {{sucessos}}</h4>
+        {{/if}}
+        <div class="dices-result">
+            {{#each dices as |dice|}}
+				<img alt="{{dice}}" src="systems/librarpg/assets/dice-{{dice}}.png" />
+            {{/each}}
+        </div>
+    </div>
+</div>

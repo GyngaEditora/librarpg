@@ -1,0 +1,148 @@
+
+		<table class="standardTable">
+			<tr>
+				<td style="width:10%">
+					<div>
+						{{actor.system.ataque.lutar}}
+					</div>
+					<div>
+						<span class="rollable weapon-rollable" attr="ataque.lutar" dano="0">
+							{{localize "ficha.ataque.lutar"}}
+						</span>
+					</div>
+				</td>
+				<td style="width:4%">=</td>
+				<td style="width:10%">
+					<div>
+						<input class="atributos-input" name="system.ataque.outros_for" type="number" value="{{actor.system.ataque.outros_for}}" />
+					</div>
+					<div>
+						{{localize "ficha.ataque.outros"}}
+					</div>
+				</td>
+				<td style="width:4%">+</td>
+				<td style="width:10%">
+					<div>
+						{{actor.system.atributos.forca.valor}}
+					</div>
+					<div>
+						{{localize "ficha.atributos.extenso.forca"}}
+					</div>
+				</td>
+				<td style="width:4%">+</td>
+				<td style="width:10%">
+					<div>
+						{{localize "ficha.ataque.base"}}
+					</div>
+					<div>
+						<input class="atributos-input" name="system.ataque.base" type="number" value="{{actor.system.ataque.base}}" />
+					</div>
+				</td>
+				<td style="width:4%">+</td>
+				<td style="width:10%">
+					<div>
+						{{actor.system.atributos.agilidade.valor}}
+					</div>
+					<div>
+						{{localize "ficha.atributos.extenso.agilidade"}}
+					</div>
+				</td>
+				<td style="width:4%">+</td>
+				<td style="width:10%">
+					<div>
+						<input class="atributos-input" name="system.ataque.outros_agi" type="number" value="{{actor.system.ataque.outros_agi}}" />
+					</div>
+					<div>
+						{{localize "ficha.ataque.outros"}}
+					</div>
+				</td>
+				<td style="width:4%">=</td>
+				<td style="width:10%">
+					<div>
+						{{actor.system.ataque.atirar}}
+					</div>
+					<div>
+						<span class="rollable weapon-rollable" attr="ataque.atirar" dano="0" arma="????">
+							{{localize "ficha.ataque.atirar"}}
+						</span>
+					</div>
+				</td>
+			</tr>
+		</table>
+		
+		
+		<table class="standardTable">
+			<tr>
+				<td style="width:60%">
+					<table class="standardTable">
+						<tr>
+							<td>
+								<div>
+									{{actor.system.vida.base}}
+								</div>
+								<div>
+									{{localize "ficha.vida.base"}}
+								</div>
+							</td>
+							<td style="width:4%">+</td>
+							<td>
+								<div>
+									<input class="atributos-input" name="system.vida.temp" type="number" value="{{actor.system.vida.temp}}" />
+								</div>
+								<div>
+									{{localize "ficha.vida.temp"}}
+								</div>
+							</td>
+							<td style="width:4%">-</td>
+							<td>
+								<div>
+									<input class="atributos-input" name="system.vida.ferimentos" type="number" value="{{actor.system.vida.ferimentos}}" />
+								</div>
+								<div>
+									{{localize "ficha.vida.ferimentos"}}
+								</div>
+							</td>
+							<td style="width:4%">=</td>
+							<td>
+								<div>
+									{{actor.system.vida.atual}}
+								</div>
+								<div>
+									{{localize "ficha.vida.atual"}}
+								</div>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td style="width:40%">
+					<table class="standardTable">
+						<tr>
+							<td>
+								<div>
+									{{localize "ficha.movimento"}}
+								</div>
+								<div>
+									<input class="atributos-input" name="system.movimento" type="number" value="{{actor.system.movimento}}" />
+								</div>
+							</td>
+							<td>
+								<div>
+									{{localize "ficha.defesa"}}
+								</div>
+								<div>
+									{{actor.system.defesa}}
+								</div>
+							</td>
+							<td>
+								<div>
+									{{localize "ficha.protecao"}}
+								</div>
+								<div>
+									{{actor.system.protecao}}
+								</div>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>

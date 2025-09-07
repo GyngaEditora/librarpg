@@ -1,0 +1,135 @@
+{
+	"Actor": {
+		"types": ["actor", "npc"],
+		"templates": {
+			"base":{
+				"background":"",
+				"atributos": {
+					"forca":{
+						"valor": 0,
+						"grad": 3
+					},
+					"agilidade":{
+						"valor": 0,
+						"grad": 3
+					},
+					"astucia":{
+						"valor": 0,
+						"grad": 3
+					},
+					"porte":{
+						"valor": 0,
+						"grad": 3
+					}
+				},
+				"attrMagico": "astucia",
+				"circuloMagico": 0,
+				"defesa": 0,
+				"movimento": 0,
+				"protecao": 0,
+				"vida": {
+					"base": 0,
+					"temp": 0,
+					"ferimentos": 0
+				},
+				"nivel":"",
+				"tamanho": 0,
+				"notas":""
+			}
+		},
+		"actor":{
+			"templates":["base"],
+			"pericias": {
+				"conhecimentos":{
+					"cura": 0,
+					"historia": 0,
+					"investigacao": 0,
+					"ocultismo": 0,
+					"religiao": 0
+				},
+				"sociais":{
+					"etiqueta": 0,
+					"manha": 0,
+					"performance": 0
+				},
+				"talentos":{
+					"oficios": 0,
+					"percepcao": 0,
+					"sobrevivencia": 0
+				}
+			},
+			"ataque": {
+				"base": 0,
+				"outros_for": 0,
+				"outros_agi": 0
+			},
+			"carga": {
+				"max": 0,
+				"atual": 0,
+				"penalidade": 0
+			},
+			"xp": {
+				"atual": 0,
+				"prox": 0
+			},
+			"fofoca": 0,
+			"eter": 0,
+			"povo":"",
+			"classe":"",
+			"fe": "",
+			"especializacao": "",
+			"riquezas": {
+				"primarias": {
+					"ouro": "",
+					"outros": ""
+				},
+				"secundarias": {
+					"cruzeiro": "",
+					"curinga": "",
+					"dobrao": "",
+					"nanquim": "",
+					"peso": "",
+					"realeza": ""
+				}
+			}
+		}
+	},
+	"Item": {
+		"types":["arma", "armadura", "item", "habilidade", "idioma"],
+		"templates": {
+			"base":{
+				"resumo": "",
+				"descricao": ""
+			},
+			"item": {
+				"carga": 0,
+				"preco": 0
+			}
+		},
+		"arma":{
+			"templates":["base", "item"],
+			"propriedades": {
+				"dano": "",
+				"iniciativa": "",
+				"especial": "",
+				"tipo": "",
+				"alcance": ""
+			},
+			"atributo": "ataque.lutar"
+		},
+		"item":{
+			"templates":["base", "item"]
+		},
+		"idioma":{
+			"templates":["base"]
+		},
+		"armadura":{
+			"templates":["base", "item"],
+			"propriedades": {
+				"avaria": 0,
+				"protecao": 0,
+				"penalidade": 0
+			}
+		}
+	}
+}
