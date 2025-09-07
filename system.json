@@ -19,7 +19,7 @@
   ],
   "gridDistance": 5,
   "gridUnits": "ft",
-  "primaryTokenAttribute": vida.base,
+  "primaryTokenAttribute": "vida.base",
   "secondaryTokenAttribute": null,
   "url": "https://github.com/GyngaEditora/librarpg/",
   "manifest": "https://github.com/GyngaEditora/librarpg/releases/download/1.0-12/system.json",
