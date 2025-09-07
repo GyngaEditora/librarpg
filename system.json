@@ -19,7 +19,10 @@
   ],
   "gridDistance": 5,
   "gridUnits": "ft",
-  "primaryTokenAttribute": null,
+  "primaryTokenAttribute": vida.base,
   "secondaryTokenAttribute": null,
+  "url": "https://github.com/GyngaEditora/librarpg/",
+  "manifest": "https://github.com/GyngaEditora/librarpg/releases/download/1.0-12/system.json",
+  "download": "https://github.com/GyngaEditora/librarpg/releases/download/1.0-12/legadorpg-1.0-12.zip",
   "license": "LICENSE.txt"
 }
